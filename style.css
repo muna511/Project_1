@@ -1,0 +1,203 @@
+body{
+    font-family: "Quicksand";
+    margin:0px;
+
+}
+header{
+    grid-area:header;
+    background: linear-gradient(#777CA1,#BDADFB);
+}
+#img
+{
+    grid-area:img1;
+}
+#services
+{
+    grid-area:services;
+    backgroun:#e0e0e0;
+}
+.logo{
+    width:120px;
+
+
+}
+.banner{
+    padding:100px;
+    display:flex;
+    justify-content:space-between;
+    color:white;
+
+}
+.banner .content{
+    max-width:500px;
+    text-align:left;
+}
+.banner .content h2{
+    font-size:3rem;
+    margin-bottom: 10px;
+
+}
+.banner .content p{
+    font-size:1rem;
+    margin-bottom: 30px;
+    
+}
+.banner .content button {
+    background: #ffe101;
+    color:#00a69c;
+    font-size:1.5rem;
+    border:2px solid #ffe101;
+    border-radius: 5px;
+    box-shadow: 0 0px 4px 1px #BDADFB;
+    padding:10px 40px;
+
+
+}
+
+.banner img{
+    max-width:50%;
+
+}
+.nav-list
+{
+    font-size:1rem;
+    padding:1rem 0px ;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin:0px;
+    margin-bottom:0px;
+}
+
+nav-item
+{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+nav-item a{
+    text-decoration: none;
+    color:#0c1753;
+}
+
+nav-item  a:hover{
+    color:#00a69c;
+}
+
+nav-item:first-child{
+    margin-left:1rem;
+    margin-right:auto;
+
+}
+
+.text-style{
+    text-align:left;
+    margin:20px;
+    line-height:30px;
+   
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "services"
+        "img1"
+        "content1"
+        "img2"
+        "content2"
+        "img3"
+        "content3"
+        "contact"
+        "footer";
+    }
+    .about-img{
+        width:50%;
+    }
+  .banner{
+      flex-direction:column-reverse;
+     padding: 30px;
+  }  
+  .banner img{
+      max-width:100%;
+  }
+.banner .content{
+   text-align: center; 
+}
+}
+
+.container{
+    display:grid;
+    height:100vh;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.8fr 0.2fr;
+    grid-template-areas:
+ "nav nav"
+"header header"
+"services services"
+"img1 contant1"
+"contant2 img2"
+"img3 contant3"
+"contact contact"
+"footer footer"
+;
+font-weight: 800;
+text-align:center;
+width:100%;
+
+}
+nav{
+    grid-area: nav;
+    background:white;
+    color:#0c1753;
+    box-shadow: 0 4px 2px -2px gray;
+
+}
+
+header{
+    grid-area:header;
+    background:linear-gradient(#777CA1,#BDADFB);
+}
+
+#services{
+    grid-area:services;
+    background: #e0e0e0;
+}
+
+#img1{
+    grid-area: img1;
+}
+
+#content1
+{
+    grid-area:content1;
+    margin:15px;
+}
+
+#img2{
+    grid-area: img2;
+}
+
+#content2
+{
+    grid-area:content2;
+}
+#img3{
+    grid-area: img3;
+}
+
+#content3
+{
+    grid-area:content3;
+}
+
+#contact{
+    grid-area: contact;
+    background:linear(180deg,#0C1753 0% , #0c1753 100%);
+}
+footer{
+    grid-area: footer;
+    background: rgba 147,117,255,0.1;
+}
